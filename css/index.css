@@ -42,6 +42,9 @@ body {
 	background: linear-gradient(125deg,rgb(60,210,90),rgb(50,91,200));
 	
 }
+.material-icons {
+	font-size: 6vh;
+}
 #footer {
 	padding: 2vw;
 	text-align: left;
@@ -49,7 +52,7 @@ body {
 	font-size: 1.5vw;
 	font-weight: 300;
 	width:96vw;
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	background-color: #e3e3e3;
 	color: black;
@@ -57,7 +60,7 @@ body {
 }
 #border {
 	font-family: 'Rubik', sans-serif;
-	font-size: 4vw;
+	font-size: 4vh;
 	font-weight: 300;
 
 	margin-left: 22.5vw;
@@ -77,12 +80,13 @@ body {
 #links a {
 	float: left;
 	font-family: 'Rubik', sans-serif;
-	font-size: 2.5vw;
+	font-size: 3.5vh;
 	font-weight: 600;
-	padding: 2vw;
-	padding-bottom: 0vw;
+	padding: 3vh;
+	padding-bottom: 4vw;
+	padding-top: 2.5vw;
 	width: 14vw;
-	height: 7vw;
+	height: 7vh;
 	text-align: center;
 	text-decoration: none;
 	color: white;
@@ -186,8 +190,8 @@ body {
 }
 @media only screen and (max-width: 800px) {
 	#links a {
-		font-size: 5vw;
-		height: 10vh;
+		font-size: 4vh;
+		height: 12vh;
 		width: 90%;
 		margin: 0.5vw;
 		border: .7vh solid white;
