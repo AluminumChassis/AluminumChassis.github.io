@@ -165,7 +165,6 @@ body {
 	top: -100%;
 }
 /*** HEX CONTENT **********************************************************************/
-
 .hex h1 {
   	font-size: 2vw;
 	width: 90%;
@@ -177,7 +176,6 @@ body {
 	margin: 15%;
 	top: 100%;
 }
-
 #hexGrid{
 	padding-top: 10vw;
 	padding-bottom: 10vw;
@@ -194,13 +192,13 @@ body {
 		height: 12vh;
 		width: 90%;
 		margin: 0.5vw;
-		border: .7vh solid white;
+		border: .5vw solid white;
 	}
 	#border {
 		font-size: 6vw;
 	}
 	#links {
-		width: 80vw;
+		width: 76vw;
 		margin-left: 10vw;
 		margin-bottom: 80vh;
 	}
