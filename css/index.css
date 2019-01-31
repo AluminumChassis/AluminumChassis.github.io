@@ -21,6 +21,7 @@ body {
 *{
 	transition: all .5s ease-out;
 }
+
 #header {
 	margin: 0; 
 	display: block;
@@ -71,23 +72,23 @@ body {
 	width: 60vw;
 	display: block;
 	margin-top: 5vw; 
-	margin-bottom: 100%;
+	margin-bottom: 40%;
 }
 #links a {
 	float: left;
 	font-family: 'Rubik', sans-serif;
 	font-size: 2.5vw;
 	font-weight: 600;
-	padding: 2%;
+	padding: 2vw;
 	padding-bottom: 0vw;
-	width: 26.66%;
+	width: 14vw;
 	height: 7vw;
 	text-align: center;
 	text-decoration: none;
 	color: white;
 	background-color: black;
 	display: block;
-	margin: .5%; 
+	margin: .5vw; 
 	border: .5vw solid white;
 	mix-blend-mode: screen;
 }
@@ -95,10 +96,6 @@ body {
 	color: black;
 	background-color: white;
 }
-#links a i {
-	font-size: 2vw;
-}
-
 #hexGrid {
 	display: flex;
 	flex-wrap: wrap;
@@ -186,4 +183,24 @@ body {
 }
 .hex:nth-child(5n+1){
 	margin-left:16.666%;
+}
+@media only screen and (max-width: 1000px) {
+	#links a {
+		font-size: 5vw;
+		height: 10vh;
+		width: 90%;
+		margin: 0.5vw;
+		border: .7vh solid white;
+	}
+	#border {
+		font-size: 6vw;
+	}
+	#links {
+		width: 80vw;
+		margin-left: 10vw;
+		margin-bottom: 80vh;
+	}
+	#footer {
+		font-size: 3vh;
+	}
 }
