@@ -51,7 +51,7 @@ body {
 	font-size: 1.5vw;
 	font-weight: 300;
 	width:96vw;
-	position: fixed;
+	position: absolute;
 	bottom: 0;
 	background-color: #e3e3e3;
 	color: black;
@@ -183,7 +183,7 @@ body {
 }
 #hexGrid{
 	padding-top: 10vw;
-	padding-bottom: 10vw;
+	padding-bottom: 20vw;
 }
 .hex {
 	width: 33.333%;
