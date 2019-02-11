@@ -38,19 +38,19 @@ body {
 	color: #fafafa;
 	flex-flow: column;
 	width: 100vw;
-	background: linear-gradient(125deg,rgb(60,210,90),rgb(50,91,200));
+	background: linear-gradient(125deg,#6f6,#207bf5);
 	
 }
 .material-icons {
 	font-size: 6vh;
 }
 #footer {
-	padding: 2vw;
+	padding: 1vw;
 	text-align: left;
 	font-family: 'Rubik', sans-serif;
-	font-size: 1.5vw;
+	font-size: 1.4vw;
 	font-weight: 300;
-	width:96vw;
+	width:100vw;
 	position: absolute;
 	bottom: 0;
 	background-color: #e3e3e3;
@@ -60,15 +60,13 @@ body {
 #border {
 	text-align: center;
 	font-family: 'Rubik', sans-serif;
-	font-size: 4vh;
+	font-size: 6vh;
 	font-weight: 300;
 	margin-top: 10vh;
 	margin-left: 22.5vw;
 	width: 50vw;
-	color: black;
+	color: white;
 	padding: 2.5vw;
-	background-color: #e3e3e3;
-	mix-blend-mode: screen;
 }
 #links {
 	margin-left: 20vw; 
@@ -120,9 +118,10 @@ body {
 }
 
 .hex {
+
 	position: relative;
 	visibility:hidden;
-	outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
+	outline:1px solid transparent;
 }
 .hex::after{
 	content:'';
@@ -136,7 +135,7 @@ body {
 	padding-bottom: 110.851%; /* =  width / sin(60) */
 	overflow: hidden;
 	visibility: hidden;
-	outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
+	outline:1px solid transparent;
 	-webkit-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
 	-ms-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
 	transform: rotate3d(0,0,1,-60deg) skewY(30deg);
@@ -154,9 +153,10 @@ body {
 	background-color: #e3e3e3;
 	color: #000;
 	overflow: hidden;
-	-webkit-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
-	-ms-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+	-webkit-transform: skewY(-30deg) rotate3d(0,0,1,0deg);
+	-ms-transform: skewY(-30deg) rotate3d(0,0,1,0deg);
 	transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+
 }
 .hexLink:hover {
 	background-color: #303030;
@@ -174,7 +174,15 @@ body {
   	font-size: 2vw;
 	width: 90%;
 	margin: 5%;
-	top: 23%;
+	top: 35%;
+}
+/*** HEX CONTENT **********************************************************************/
+.hex h2 {
+  	font-size: 2.4vw;
+  	font-weight: 400;
+	width: 85%;
+	margin: 7.5%;
+	top: 20%;
 }
 .hex p {
 	width: 70%;
@@ -182,10 +190,10 @@ body {
 	top: 100%;
 }
 #hexGrid{
-	padding-top: 10vw;
+	padding-top: 2.5vw;
 	padding-bottom: 20vw;
 }
-.hex {
+.hex {	
 	width: 33.333%;
 }
 .hex:nth-child(5n+1){
