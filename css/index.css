@@ -1,9 +1,11 @@
 /* COPYRIGHT © 2019 BENJAMIN CICCARELLI */
 ::selection {
-	background: rgba(0,0,0,0);
+	background: rgba(0,0,0,.7);
+	color: white;
 }
 ::-moz-selection {
-	background: rgba(0,0,0,0);
+	background: rgba(0,0,0,.7);
+	color: white;
 }
 ::-webkit-scrollbar { 
 	display: none; 
