@@ -67,7 +67,7 @@ body {
 }
 @keyframes slide  {
   from {left: 110vw;}
-  to {left: -210vw;}
+  to {left: -220vw;}
 }
 #projects {
 	height: auto;
