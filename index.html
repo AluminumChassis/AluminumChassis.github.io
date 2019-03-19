@@ -18,30 +18,33 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
   </head>
   <body>
-      <div id="intro">
-        <div id="border">
-          Ben Ciccarelli
+    <div id="bg"></div>
+    <div id="overlay"></div>
+    <div id="titleSlide">
+      <div id="title">Hello, I'm Benjamin Ciccarelli<p> I'm a programmer from Arizona.<p></div>
+
+      <button id="projectButton" onclick="projects()">Projects and Skills</button>
+    </div>
+    <div id="projects"></div>
+    <div id="skills">
+      Skills
+      <div id="bar">
+        <div>0 yr</div>
+        <div>2 yr</div>
+        <div>4 yr</div>
+      </div>
+      <div id="skillList">
+        <div id="skill" style="width: 60vw">
+          JavaScript, HTML, CSS
         </div>
-        <ul id="hexGrid">
-          <li class="hex">
-            <div class="hexIn">
-              <a class="hexLink" href="projects.html"><h1>Projects</h1><p>Look at some of my biggest and best projects to get a good idea of my skills</p></a>
-            </div>
-          </li>
-          <li class="hex">
-            <div class="hexIn">
-              <a class="hexLink" href="about.html"><h1>About</h1><p>Learn about me</p></a>
-            </div>
-          </li>
-          <li class="hex">
-            <div class="hexIn">
-              <a class="hexLink" href="contact.html"><h1>Contact</h1><p>Get in touch with me via email or social media</p></a>
-            </div>
-          </li>
-        </ul>
-        <div id="footer">
-          © 2019 Benjamin Ciccarelli
+        <div id="skill" style="width: 30vw">
+          Python
+        </div>
+        <div id="skill" style="width: 45vw">
+          C#
         </div>
       </div>
+    </div>
   </body>
+  <script type="text/javascript" src="js/main.js"></script>
 </html>
