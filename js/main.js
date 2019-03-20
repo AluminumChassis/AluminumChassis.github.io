@@ -1,5 +1,5 @@
 if(window.location != "https://ciccarelli.me/") {
-	window.location = "https://ciccarelli.me/"
+	//window.location = "https://ciccarelli.me/"
 }
 const url = "https://api.github.com/users/aluminumchassis/repos"
 const Http = new XMLHttpRequest();

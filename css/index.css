@@ -21,6 +21,7 @@ body {
 	padding: 0;
 }
 #bg {
+	top: 0;
 	position: fixed;
 	z-index: -1;
 	width: 100vw;
@@ -32,10 +33,9 @@ body {
  	filter: blur(4px);
 }
 #titleSlide {
-	position: absolute;
-    font-size: 2vw;
-    left: 10vw;
-    top: 15vh;
+	font-size: 2vw;
+	margin-left: 10%;
+	margin-top: 15%;
 }
 #title {
 	font-size: 2.5vw;
@@ -55,6 +55,7 @@ body {
 	position: fixed;
 	display: block;
 
+	top: 0;
 	left: 110vw;
 	background-color: #222; 
 	transform: skew(-10deg);
