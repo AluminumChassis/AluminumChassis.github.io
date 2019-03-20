@@ -32,9 +32,10 @@ body {
  	filter: blur(4px);
 }
 #titleSlide {
-	font-size: 2vw;
-	margin-left: 10%;
-	margin-top: 15%;
+	position: absolute;
+    font-size: 2vw;
+    left: 10vw;
+    top: 15vh;
 }
 #title {
 	font-size: 2.5vw;
