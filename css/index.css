@@ -71,6 +71,10 @@ body {
   from {left: 110vw;}
   to {left: -220vw;}
 }
+@keyframes slideBack {
+  from {left: -220vw;}
+  to {left: 110vw;}
+}
 #projects {
 	height: auto;
 	display: block;
@@ -96,7 +100,7 @@ body {
 	width: 22vw;
 	height: 10vh;
 	text-decoration: none;
-	border: 0px white solid;
+	border: 2px solid white;
 
 	mix-blend-mode: screen;
 }

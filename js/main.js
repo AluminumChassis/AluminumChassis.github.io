@@ -1,6 +1,3 @@
-if(window.location != "https://ciccarelli.me/") {
-	window.location = "https://ciccarelli.me/"
-}
 const url = "https://api.github.com/users/aluminumchassis/repos"
 const Http = new XMLHttpRequest();
 Http.open("GET", url);
@@ -13,9 +10,9 @@ Http.onreadystatechange = function() {
 function projects() {
 	overlay = document.getElementById('overlay')
 	overlay.style.display = "block"
-	overlay.style = "animation-play-state: running;";
+	overlay.style = "animation-name: slide; animation-play-state: running;";
 	setTimeout(function(){
-		document.getElementById("bg").style.backgroundImage= "none"
+		document.getElementById("bg").style.backgroundImage="none"
 		document.getElementById("bg").style.backgroundColor= "#111"
 
 		document.getElementById("projectButton").style.display = "none"
@@ -33,5 +30,23 @@ function projects() {
 		},1500)
 			
 		
+	},700)
+}
+function mainPage() {
+	overlay = document.getElementById('overlay')
+	overlay.style.display = "block"
+	overlay.style = "animation-name: slideBack; animation-play-state: running;";
+	setTimeout(function(){
+		document.getElementById("bg").style.backgroundImage = ""
+		document.getElementById("bg").style.backgroundColor = ""
+
+		document.getElementById("projectButton").style.display = "block"
+		document.getElementById("skills").style.display = "none"
+		document.getElementById("titleSlide").style.marginTop = "15%"
+		document.getElementById("title").innerHTML = "Hello, I'm Benjamin Ciccarelli<p> I'm a programmer from Arizona.</p>"
+		document.getElementById("projects").innerHTML = ""
+		setTimeout(function(){
+			overlay.style.display = "none"
+		},1500)
 	},700)
 }
