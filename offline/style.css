@@ -1,0 +1,162 @@
+/* COPYRIGHT © 2019 BENJAMIN CICCARELLI */
+::selection {
+	background: rgba(0,0,0,.7);
+	color: white;
+}
+::-moz-selection {
+	background: rgba(0,0,0,.7);
+	color: white;
+}
+::-webkit-scrollbar { 
+	display: none; 
+}
+html{
+	scrollbar-width: none;
+	scroll-behavior: smooth;
+}
+body {
+	background-color: black;
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+}
+#bg {
+	top: 0;
+	position: fixed;
+	z-index: -1;
+	width: 100vw;
+	height: 100vh;
+
+	background-image: url("../canyon.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+ 	filter: blur(4px);
+}
+#titleSlide {
+	font-size: 2vw;
+	margin-left: 10%;
+	margin-top: 15%;
+}
+#title {
+	font-size: 2.5vw;
+	font-family: sans-serif;
+	color: white;
+	width: 30vw;
+	margin-bottom: 2vw;
+}
+#title p {
+	color: rgba(255,255,255,.8);
+	font-size: 2vw;
+	margin: 0;
+}
+#overlay {
+	filter: none;
+	z-index: 100;
+	position: fixed;
+	display: block;
+
+	top: 0;
+	left: 110vw;
+	background-color: #222; 
+	transform: skew(-10deg);
+	width: 200vw;
+	height: 100vh;
+	animation-play-state: paused;
+
+  	animation-name: slide;
+  	animation-duration: 3s;
+
+}
+@keyframes slide  {
+  from {left: 110vw;}
+  to {left: -220vw;}
+}
+@keyframes slideBack {
+  from {left: -220vw;}
+  to {left: 110vw;}
+}
+#projects {
+	height: auto;
+	display: block;
+	float: left;
+	margin-left: 10vw;
+	margin-bottom: 5vw;
+}
+#projects a {
+
+	font-size: 1vw;
+	float: left;
+	font-family: sans-serif;
+	
+
+	background-color: white;
+	color: black;
+	display: block;
+	padding: 1vw;
+	padding-top: 0;
+	padding-bottom: 4.5vw;
+	margin-right: 2vw;
+	margin-bottom: 2vw; 
+	width: 22vw;
+	height: 10vh;
+	text-decoration: none;
+	border: 2px solid white;
+
+	mix-blend-mode: screen;
+}
+#projects a:hover {
+	color: white;
+	background-color: black;
+}
+#skills {
+
+	float: left;
+	font-size: 2.5vw;
+	font-family: sans-serif;
+	margin-left: 10vw;
+	display: none;
+	color: white;
+	width: 30vw;
+	margin-bottom: 2vw;
+}
+#bar {
+	transform: translate(0,6vh);
+	margin-top: 3vh; 
+	margin-bottom: 7vh; 
+	width: 80vw;
+	height: 2px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	color: rgba(255,255,255,.5);
+	background: rgba(255,255,255,.5);
+}
+#bar div{
+	transform: translate(0,-7.5vh);
+	margin: 0;
+}
+#skill {
+
+	margin-top: 1vh;
+	padding: 3vh;
+	mix-blend-mode: screen;
+	background: white;
+	color: black;
+}
+*{
+	transition: all .5s ease-out;
+}
+button {
+	font-size: 1.5vw;
+	font-weight: 500;
+	padding: 1.5vw;
+	border: 2px solid white;
+	background-color: black;
+	color: white;
+	mix-blend-mode: screen;
+	cursor: pointer;
+}
+button:hover {
+	background-color: white;
+	color: black;
+}

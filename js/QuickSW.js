@@ -1,14 +1,14 @@
 // COPYRIGHT © 2019 BENJAMIN CICCARELLI
 if(typeof(document) != "undefined") {
-	if ('serviceWorker' in navigator) {
-		window.addEventListener('load', function() {
-			navigator.serviceWorker.register('/QuickSW.js').then(function(registration) {
-				console.log('ServiceWorker registration successful with scope: ', registration.scope);
-			}, function(err) {
-				console.log('ServiceWorker registration failed: ', err);
-			});
-		});
-	}
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/QuickSW.js').then(function(registration) {
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      }, function(err) {
+        console.log('ServiceWorker registration failed: ', err);
+      });
+    });
+  }
 } else {
   const cacheName = `QuickSW`;
   self.addEventListener('install', e => {
@@ -18,6 +18,7 @@ if(typeof(document) != "undefined") {
             `/offline/index.html`,
             `/offline/style.css`,
             `/offline/script.js`,
+            `/offline/canyon.jpg`,
           ]).then(() => self.skipWaiting());
         })
       );
