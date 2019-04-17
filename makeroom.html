@@ -28,7 +28,7 @@
     var mousePos = {x:0,y:0}
     var objects = []
     var population=100
-    var soylentSpeed=1
+    var soylentSpeed=0
     var capacity=100
     var budget = 100
     var death = 0
@@ -127,9 +127,12 @@
       over = undefined
       ctx.fillStyle = "#fff"
       if (started) {
-        population += soylentSpeed*population/1000 - death;
-        budget += Math.sqrt(soylentSpeed)*population/10000;
+        population += population/1000 - death + 20/population;
+
+        budget += population/10000;
         death *= .9
+        soylentSpeed += soylentSpeed/1000
+        capacity -= soylentSpeed/15
       }
       for (var i = 0; i < objects.length; i++) {
         objects[i].draw()
@@ -140,23 +143,6 @@
         }
       }
 
-      if(inMenu) {
-        for (var i = 0; i < menuObjects.length; i++) {
-          menuObjects[i].draw()
-          if(mouseIn(menuObjects[i]) && menuObjects[i].hover) {
-            over = i
-          } else if(menuObjects[i].hoverStop) {
-            menuObjects[i].hoverStop()
-          }
-        }
-        if(menuObjects[over] && menuObjects[over].hover){
-          menuObjects[over].hover()
-        }
-      } else {
-        if(objects[over] && objects[over].hover){
-          objects[over].hover()
-        }
-      }
       if(started) {
         ctx.fillText("Population:" + Math.round(population) + "/" + Math.round(capacity), 10, 40);
         ctx.fillText("Budget:$" + Math.round(budget) + "k", 10, 60);
@@ -186,6 +172,21 @@
         
       }
       
+      if(inMenu) {
+        for (var i = 0; i < menuObjects.length; i++) {
+          menuObjects[i].draw()
+          if(mouseIn(menuObjects[i]) && menuObjects[i].hover) {
+            over = i
+          } else if(menuObjects[i].hoverStop) {
+            menuObjects[i].hoverStop()
+          }
+        }
+        if(menuObjects[over] && menuObjects[over].hover){
+          menuObjects[over].hover()
+        }
+      } else if(objects[over] && objects[over].hover){
+        objects[over].hover()
+      }
     }
     function sprite(src, x, y, sx, sy){
       this.x = x
@@ -294,7 +295,8 @@
             n.id = oid+"soy"
             objects.splice(getIndexById(oid)+1,0,n)
             console.log(getObjectById(n.id))
-            soylentSpeed *= .95
+            capacity += 250
+            soylentSpeed += 1
           }
           inMenu = false
           menu.visible = false
