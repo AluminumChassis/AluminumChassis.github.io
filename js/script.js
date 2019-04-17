@@ -5,7 +5,6 @@ Http.send();
 var e
 Http.onreadystatechange = function() {
 	e=JSON.parse(this.responseText.replace("AluminumChassis.github.io","Ciccarelli.me"))
-	
 }
 function projects() {
 	overlay = document.getElementById('overlay')
@@ -17,14 +16,26 @@ function projects() {
 
 		document.getElementById("projectButton").style.display = "none"
 		document.getElementById("skills").style.display = "block"
+		document.getElementById("projects").style.display = "block"
 		document.getElementById("titleSlide").style.marginTop = "5%"
 		document.getElementById("title").innerText = "Projects"
 		for (var i =0; i < e.length; i++ ){
-			e[i].language = e[i].language.replace("JavaScript", "JS").replace("Python", "Py")
-			
-			document.getElementById("projects").innerHTML+='<a target="_blank" href="'+e[i].html_url+'"><h1>'+e[i].name+' - '+ e[i].language+ '</h1>'+e[i].description+'</a>'
+			if(!document.getElementById(e[i].language)) {
+				document.getElementById("projects").innerHTML+='<div id="'+e[i].language+'" class="lang"><h1>'+e[i].language+'</h1></div>'
+			}
+			document.getElementById(e[i].language).innerHTML+='<a target="_blank" href="'+e[i].html_url+'"><h1>' + e[i].name + '</h1>'+e[i].description+'</a>'
 		}
-		
+		var l = document.getElementsByClassName("lang")
+		for (var i = 0; i < l.length; i++) {
+			l[i].onmouseover = function(){
+				this.style = "height: "+(25*Math.ceil(this.childElementCount/4)+10)+"vh"
+			};
+			l[i].onmouseout = function(){
+				console.log("hello")
+				this.style = "height: 10vh";
+			};
+		}
+				
 		setTimeout(function(){
 			overlay.style.display = "none"
 		},1500)
@@ -44,7 +55,7 @@ function mainPage() {
 		document.getElementById("skills").style.display = "none"
 		document.getElementById("titleSlide").style.marginTop = "15%"
 		document.getElementById("title").innerHTML = "Hello, I'm Benjamin Ciccarelli<p> I'm a programmer from Arizona.</p>"
-		document.getElementById("projects").innerHTML = ""
+		document.getElementById("projects").style.display = "none"
 		setTimeout(function(){
 			overlay.style.display = "none"
 		},1500)
