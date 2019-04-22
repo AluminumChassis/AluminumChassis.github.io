@@ -68,12 +68,12 @@ body {
 
 }
 @keyframes slide  {
-  from {left: 110vw;}
+  from {left: 120vw;}
   to {left: -220vw;}
 }
 @keyframes slideBack {
   from {left: -220vw;}
-  to {left: 110vw;}
+  to {left: 120vw;}
 }
 #projects {
 	height: auto;
@@ -109,7 +109,6 @@ body {
 	background-color: black;
 }
 #skills {
-
 	float: left;
 	font-size: 2.5vw;
 	font-family: sans-serif;
@@ -117,7 +116,7 @@ body {
 	display: none;
 	color: white;
 	width: 30vw;
-	margin-bottom: 2vw;
+	margin-bottom: 5vw;
 }
 #bar {
 	transform: translate(0,6vh);

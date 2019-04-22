@@ -10,6 +10,7 @@ function projects() {
 	overlay = document.getElementById('overlay')
 	overlay.style.display = "block"
 	overlay.style = "animation-name: slide; animation-play-state: running;";
+	document.getElementById("projectButton").disabled = true
 	setTimeout(function(){
 		document.getElementById("bg").style.display="none"
 
@@ -48,6 +49,8 @@ function projects() {
 	},700)
 }
 function mainPage() {
+
+	document.getElementById("projectButton").disabled = false
 	overlay = document.getElementById('overlay')
 	overlay.style.display = "block"
 	overlay.style = "animation-name: slideBack; animation-play-state: running;";
