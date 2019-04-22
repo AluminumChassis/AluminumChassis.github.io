@@ -15,7 +15,7 @@ html{
 	scroll-behavior: smooth;
 }
 body {
-	background-color: black;
+	background: linear-gradient(280deg,#555,#000);
 	overflow-x: hidden;
 	margin: 0;
 	padding: 0;
@@ -100,7 +100,7 @@ body {
 	width: 17vw;
 	height: 16vh;
 	text-decoration: none;
-	border: 2px solid white;
+	border: 3px solid white;
 
 	mix-blend-mode: screen;
 }
@@ -150,7 +150,7 @@ button {
 	font-size: 1.5vw;
 	font-weight: 500;
 	padding: 1.5vw;
-	border: 2px solid white;
+	border: 3px solid white;
 	background-color: black;
 	color: white;
 	mix-blend-mode: screen;
@@ -167,10 +167,16 @@ button:hover {
 	height: 10vh;
 }
 .lang > h1 { 
-	background-color: #fff;
 	width: 40vw;
 	padding: .5vw;
 	color: #666;
+}
+.lang arrow {
+	padding: .5vw;
+	color: #0ff;
+}
+.lang:hover arrow {
+	padding: 1vw;
 }
 .lang > hr {
 	margin-top: 0; 
