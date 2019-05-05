@@ -15,7 +15,8 @@ html{
 	scroll-behavior: smooth;
 }
 body {
-	background: linear-gradient(280deg,#555,#000);
+	height: 100vh;
+	background: radial-gradient(#ccc,#999);
 	overflow-x: hidden;
 	margin: 0;
 	padding: 0;
@@ -179,4 +180,10 @@ button:hover {
 }
 .lang > hr {
 	margin-top: 0; 
+}
+#back{
+	position: fixed;
+	top: 10px;
+	right: 30px;
+	visibility: visible;
 }

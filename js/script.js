@@ -55,16 +55,16 @@ function mainPage() {
 	overlay.style.display = "block"
 	overlay.style = "animation-name: slideBack; animation-play-state: running;";
 	setTimeout(function(){
-		document.getElementById("bg").style.display="block"
-
 		document.getElementById("skills").style.display = "none"
 		document.getElementById("titleSlide").style.marginTop = "15%"
 		document.getElementById("title").innerHTML = "Hello, I'm Benjamin Ciccarelli<p> I'm a programmer from Arizona.</p>"
 		document.getElementById("projects").innerHTML = ""
+
+		document.getElementById("bg").style.display="block"
 		setTimeout(function(){
-			overlay.style.display = "none"
 			document.getElementById("back").style.visibility = "hidden"
 			document.getElementById("projectButton").style.display = "block"
-		},1500)
+			//overlay.style.display = "none"
+		},1000)
 	},700)
 }
