@@ -18,32 +18,35 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <div id="bg"></div>
     <div id="overlay"></div>
     <div id="titleSlide">
+      <div id="bg"></div>
       <div id="title">Hello, I'm Benjamin Ciccarelli<p> I'm a programmer from Arizona.</p></div>
-
       <button id="projectButton" onclick="projects()">Projects and Skills</button>
     </div>
-    <div id="projects">
-    </div>
-    <div id="skills">
-      <button id="back" onclick="mainPage()"><- Go back</button>
-      Skills
-      <div id="bar">
-        <div>0 yr</div>
-        <div>2 yr</div>
-        <div>4 yr</div>
+    <div id="secondSlide" style="display: none">
+      <div class="stitle">Projects</div>
+      <div class="stitle">Skills</div>
+      <div class="stitle">[Under development]</div>
+      <div id="projects">
       </div>
-      <div id="skillList">
-        <div id="skill" style="width: 60vw">
-          JavaScript, HTML, CSS
+      <div id="skills">
+        <button id="back" onclick="mainPage()"><- Go back</button>
+        <div id="bar">
+          <div>0 yr</div>
+          <div>2 yr</div>
+          <div>4 yr</div>
         </div>
-        <div id="skill" style="width: 30vw">
-          Python
-        </div>
-        <div id="skill" style="width: 45vw">
-          C#
+        <div id="skillList">
+          <div id="skill" style="width: 60vw">
+            JavaScript, HTML, CSS
+          </div>
+          <div id="skill" style="width: 30vw">
+            Python
+          </div>
+          <div id="skill" style="width: 45vw">
+            C#
+          </div>
         </div>
       </div>
     </div>

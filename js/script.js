@@ -12,20 +12,10 @@ function projects() {
 	overlay.style = "animation-name: slide; animation-play-state: running;";
 	document.getElementById("projectButton").disabled = true
 	setTimeout(function(){
-		document.getElementById("bg").style.display="none"
-
-		document.getElementById("projectButton").style.display = "none"
-		document.getElementById("skills").style.display = "block"
-		document.getElementById("projects").style.display = "block"
-		document.getElementById("titleSlide").style.marginTop = "5%"
-		document.getElementById("title").innerText = "Projects"
+		document.getElementById("titleSlide").style.display = "none"
+		document.getElementById("secondSlide").style.display = "block"
 		for (var i =0; i < e.length; i++ ){
-			if(!document.getElementById(e[i].language)) {
-				document.getElementById("projects").innerHTML+='<div id="'+e[i].language+'" class="lang"><h1>'+e[i].language+'<arrow>></arrow></h1></div>'
-			}
-		}
-		for (var i =0; i < e.length; i++ ){
-			document.getElementById(e[i].language).innerHTML+='<a target="_blank" href="'+e[i].html_url+'"><h1>' + e[i].name + '</h1>'+e[i].description+'</a>'
+			document.getElementById("projects").innerHTML+='<a target="_blank" href="'+e[i].html_url+'"><h1>' + e[i].name + '</h1>'+e[i].description+'</a>'
 		}
 			
 		var l = document.getElementsByClassName("lang")
@@ -49,18 +39,15 @@ function projects() {
 	},700)
 }
 function mainPage() {
-
 	document.getElementById("projectButton").disabled = false
 	overlay = document.getElementById('overlay')
 	overlay.style.display = "block"
 	overlay.style = "animation-name: slideBack; animation-play-state: running;";
 	setTimeout(function(){
-		document.getElementById("skills").style.display = "none"
-		document.getElementById("titleSlide").style.marginTop = "15%"
-		document.getElementById("title").innerHTML = "Hello, I'm Benjamin Ciccarelli<p> I'm a programmer from Arizona.</p>"
+		document.getElementById("titleSlide").style.display = "block"
+		document.getElementById("secondSlide").style.display = "none"
 		document.getElementById("projects").innerHTML = ""
 
-		document.getElementById("bg").style.display="block"
 		setTimeout(function(){
 			document.getElementById("back").style.visibility = "hidden"
 			document.getElementById("projectButton").style.display = "block"

@@ -16,13 +16,14 @@ html{
 }
 body {
 	height: 100vh;
-	background: radial-gradient(#ccc,#999);
+	background: radial-gradient(#ddd,#888);
 	overflow-x: hidden;
 	margin: 0;
 	padding: 0;
 }
 #bg {
 	top: 0;
+	left:0;
 	position: fixed;
 	z-index: -1;
 	width: 100vw;
@@ -43,6 +44,14 @@ body {
 	font-family: sans-serif;
 	color: white;
 	width: 30vw;
+	margin-bottom: 2vw;
+}
+.stitle {
+	float: left;
+	font-size: 2.5vw;
+	font-family: sans-serif;
+	color: white;
+	width: 25vw;
 	margin-bottom: 2vw;
 }
 #title p {
@@ -78,10 +87,11 @@ body {
 }
 #projects {
 	height: auto;
-	display: none;
 	float: left;
-	margin-left: 10vw;
+	width: 25vw;
 	margin-bottom: 5vw;
+
+	border-right: 3px solid grey;
 }
 #projects a {
 
@@ -99,7 +109,7 @@ body {
 	margin-right: 1vw;
 	margin-bottom: 2vw; 
 	width: 17vw;
-	height: 16vh;
+	min-height: 16vh;
 	text-decoration: none;
 	border: 3px solid white;
 
@@ -113,8 +123,6 @@ body {
 	float: left;
 	font-size: 2.5vw;
 	font-family: sans-serif;
-	margin-left: 10vw;
-	display: none;
 	color: white;
 	width: 30vw;
 	margin-bottom: 5vw;
@@ -186,4 +194,9 @@ button:hover {
 	top: 10px;
 	right: 30px;
 	visibility: visible;
+}
+#secondSlide {
+	display: none;
+	margin-left: 10vw;
+	margin-top: 10vh;
 }
