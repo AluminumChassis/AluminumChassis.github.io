@@ -22,12 +22,12 @@ body {
 	padding: 0;
 }
 #bg {
-	top: 0;
-	left:0;
+	top: -5px;
+	left: -5px;
 	position: fixed;
 	z-index: -1;
-	width: 100vw;
-	height: 100vh;
+	width: calc(100vw + 10px);
+	height: calc(100vh + 10px);
 
 	background-image: url("../canyon.jpg");
 	background-repeat: no-repeat;
