@@ -16,7 +16,7 @@ html{
 }
 body {
 	height: 100vh;
-	background: #bbb;
+	background: linear-gradient(-30deg,#ccc,#aaa);
 	overflow-x: hidden;
 	margin: 0;
 	padding: 0;
