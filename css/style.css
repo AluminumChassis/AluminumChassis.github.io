@@ -16,23 +16,23 @@ html{
 }
 body {
 	height: 100vh;
-	background: radial-gradient(#ddd,#888);
+	background: #bbb;
 	overflow-x: hidden;
 	margin: 0;
 	padding: 0;
 }
 #bg {
-	top: -5px;
-	left: -5px;
+	top: -.5vh;
+	left: -.5vw;
 	position: fixed;
 	z-index: -1;
-	width: calc(100vw + 10px);
-	height: calc(100vh + 10px);
+	width: calc(101vw);
+	height: calc(101vh);
 
 	background-image: url("../canyon.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
- 	filter: blur(3px);
+ 	filter: blur(.5vh);
 }
 #titleSlide {
 	font-size: 2vw;
@@ -90,8 +90,6 @@ body {
 	float: left;
 	width: 25vw;
 	margin-bottom: 5vw;
-
-	border-right: 3px solid grey;
 }
 #projects a {
 
@@ -111,7 +109,7 @@ body {
 	width: 17vw;
 	min-height: 16vh;
 	text-decoration: none;
-	border: 3px solid white;
+	border: .5vh solid white;
 
 	mix-blend-mode: screen;
 }
@@ -158,7 +156,7 @@ button {
 	font-size: 1.5vw;
 	font-weight: 500;
 	padding: 1.5vw;
-	border: 3px solid white;
+	border: .5vh solid white;
 	background-color: black;
 	color: white;
 	mix-blend-mode: screen;
@@ -191,8 +189,8 @@ button:hover {
 }
 #back{
 	position: fixed;
-	top: 10px;
-	right: 30px;
+	top: 3vh;
+	right: 4vw;
 	visibility: visible;
 }
 #secondSlide {
