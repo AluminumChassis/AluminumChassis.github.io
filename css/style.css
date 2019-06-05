@@ -32,7 +32,7 @@ body {
 	background-image: url("../canyon.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
- 	filter: blur(.5vh);
+ 	filter: blur(.5vw);
 }
 #titleSlide {
 	font-size: 2vw;
