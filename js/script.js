@@ -1,4 +1,4 @@
-const url = "https://api.github.com/users/aluminumchassis/repos"
+/*const url = "https://api.github.com/users/aluminumchassis/repos"
 const Http = new XMLHttpRequest();
 Http.open("GET", url);
 Http.send();
@@ -54,4 +54,13 @@ function mainPage() {
 			//overlay.style.display = "none"
 		},1000)
 	},700)
-}
+}*/
+
+fetch('/nav.html')
+	.then(function(response) {
+		return response.text();
+	})
+	.then(function(body) {
+		document.getElementById("menuHolder").innerHTML = body;
+		doSignOut = document.getElementById('signOut')
+	});
