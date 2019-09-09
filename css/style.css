@@ -1,39 +1,49 @@
 /* COPYRIGHT © 2019 BENJAMIN CICCARELLI */
 *{
 	--bg-color: #eee;
-	--secondary-color: #8f9;
+	--secondary-color: #555;
 	--text-color: #222;
 	--dark-highlight: #555;
 	--error-color: #d43;
-	transition: all .4s ease-out;
+	transition: all .1s ease-out;
 	float: left;
 	font-family: sans-serif;
 }
 ::selection {
-	background: var(--secondary-color);
+	background: black;
 	color: white;
 }
 ::-moz-selection {
-	background: var(--secondary-color);
+	background: black;
 	color: white;
 }
 ::-webkit-scrollbar { 
 	display: none; 
 }
 body {
-	color: var(--text-color);
-	background-color: var(--bg-color);
-	width: 100vw;
-	overflow-x: hidden;
 	margin: 0;
 	padding: 0;
-	font-weight: 400;
+	background-color: #000;
+	color: var(--bg-color);
+	overflow: hidden;
 }
-hr {
-	width: 20vw; 
-	margin: 2vh; 
-	margin-left: 0;
-	color: var(--secondary-color);
+#bg {
+	top: -1vh;
+	left: -1vw;
+	position: fixed;
+	z-index: -1;
+	width: 102vw;
+	height: 102vh;
+	background-image: url("../assets/bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+ 	filter: blur(0px);
+}
+#bottom {
+	position: absolute;
+	right: 4vh;
+	text-align: center;
+	bottom: 2vh;
 }
 *{
 	font-family: "Roboto", sans-serif;
@@ -79,21 +89,28 @@ hr {
     -webkit-user-select: none;
     -o-user-select: none;
 }
-.miniHero {
+.hero {
 	position: relative;
-	margin: 10vw;
+	margin: 0;
 	margin-top: 10vh;
-	width: 60vw;
+	width: 100vw;
+	text-align: center;
 }
-.miniHero h1 {
+.hero h1 {
 	width: 100%;
 	margin-bottom: 0; 
-	font-size: 5vh;
+	font-size: 18vh;
 }
-.miniHero p {
+.hero p {
 	width: 100%;
 	margin-top: 0;
 	font-size: 3vh;
+}
+.herolinks {
+	margin: 0;
+	margin-top: 2vh;
+	width: 100%;
+	text-align: center;
 }
 .sideCanvas {
 	left: 0;
@@ -189,7 +206,26 @@ hr {
 	bottom: 5vh;
 	width: 40%;
 }
-a {
+.white {
+	border: .6vh solid white;
+	padding: 10px;
+	font-size: 4vh;
 	float: none;
-	color: var(--secondary-color);
+	text-decoration: none;
+	color: white;
+	mix-blend-mode: screen;
+}
+.white:hover {
+	color: black;
+	background-color: white; 
+}
+.icon {
+	background: none;
+	border: 0;
+   outline: 0;
+	color: white;
+	text-decoration: none;
+}
+.icon:hover{
+	color: grey;
 }

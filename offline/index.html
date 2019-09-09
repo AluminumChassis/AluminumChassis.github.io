@@ -6,24 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Ben Ciccarelli</title>
-    <meta property="og:title" content="Ben Ciccarelli">
+    <title>Ciccarelli.me | Benjamin Ciccarelli's Website</title>
+    <meta property="og:title" content="My Projects">
+    <meta property="og:description" content="My personal website.">
     <meta property="og:locale" content="en_US">
-    <link rel="shortcut icon" type="image/png" href="images/b.png"/>
+    <link rel="shortcut icon" type="image/png" href="assets/icon.png"/>
+    <link rel="icon" href="assets/icon.png" type="image/png" sizes="16x16"> 
     <link rel="canonical" href="http://ciccarelli.me/">
     <meta property="og:url" content="http://ciccarelli.me/">
     <meta property="og:site_name" content="Ben Ciccarelli">
-    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="offline/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="assets/icon-font/flaticon.css">
   </head>
-  <body>
+  <body> 
     <div id="bg"></div>
-    <div id="overlay"></div>
-    <div id="titleSlide">
-      <div id="title">Hello, I'm Benjamin Ciccarelli<p> I'm a programmer from Arizona.</p></div>
-      <button id="projectButton" onclick="">It appears that you are offline. To get the full experience, please reconnect. </button>
+    <div id="menuHolder"></div>
+    <div class="hero unselectable">
+      <h1>Benjamin Ciccarelli</h1>
+      <p>You are offline, reconnect to the internet for more.</p>
+      <div class="herolinks">
+        <a href="https://ciccarelli.me" class="white">Refresh</a>        
+      </div>
     </div>
   </body>
-  <script type="text/javascript" src="offline/script.js"></script>
 </html>
